@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smaragd aan het IJ - Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-green: #325040;
+            --beige: #E4D2AF;
+            --light-green: #A4BAB0;
+            --olive: #7B8B6F;
+            --gold: #D4AF37;
+            --magic-blue: #6C91BF;
+        }
+
+        body {
+            font-family: 'Pirata One', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-green);
+            color: var(--dark-green);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: var(--beige);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark-green);
+            color: var(--beige);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .blog-post {
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 28px;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+
+        .blog-post p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .interactive-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: var(--olive);
+            border-radius: 10px;
+            color: var(--beige);
+        }
+
+        .interactive-section h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .interactive-section button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: var(--beige);
+            background-color: var(--dark-green);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .interactive-section button:hover {
+            background-color: var(--gold);
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 15px;
+            font-size: 20px;
+            color: var(--gold);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Smaragd aan het IJ - Blog</h1>
+        </div>
+
+        <div class="blog-post">
+            <h2>De Magie van Overpark Schellingwoude</h2>
+            <p>Overpark Schellingwoude is een verborgen juweel aan het IJ. Ontdek de geschiedenis, de natuur en de geheimen van deze unieke plek. Wandel over de paden en laat je betoveren door de prachtige omgeving.</p>
+        </div>
+
+        <div class="blog-post">
+            <h2>Route Tips voor Avonturiers</h2>
+            <p>Wil je de meest magische plekken ontdekken? Probeer de "Schatkaart Route" die je leidt langs verborgen schatten, historische locaties en adembenemende uitzichten.</p>
+        </div>
+
+        <div class="interactive-section">
+            <h3>Ontdek een geheime boodschap!</h3>
+            <button id="reveal-button">Klik hier</button>
+            <p id="hidden-message" class="hidden-message">"Het echte avontuur begint waar de kaart eindigt!"</p>
+        </div>
+    </div>
+
+    <script>
+        const button = document.getElementById('reveal-button');
+        const message = document.getElementById('hidden-message');
+
+        button.addEventListener('click', () => {
+            message.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

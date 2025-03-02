@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smaragd aan het IJ</title>
+    <link rel="shortcut icon" href="/foto/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Smaragd aan het IJ</h1>
+        <p>Ontdek de magie van Overpark Schellingwoude</p>
+    </header>
+    <main>
+        <section class="map-section">
+            <img src="foto/map.png" alt="Schatkaart van Overpark Schellingwoude">
+            <button class="treasure-point" style="top: 40%; left: 50%;" aria-label="Schattip 1" onclick="openPopup('tip1.jpg', 'Dit is een geheime plek met een geweldig uitzicht.')"></button>
+            <button class="treasure-point" style="top: 60%; left: 70%;" aria-label="Schattip 2" onclick="openPopup('tip2.jpg', 'Hier vind je een zeldzame plantensoort.')"></button>
+            <button class="treasure-point" style="top: 49%; left: 25%;" aria-label="Schattip 3" onclick="openPopup('tip3.jpg', 'Een historische plek met een verborgen verhaal.')"></button>
+        </section>
+        <section class="routes-section">
+            <article class="route-card">
+                <h2>De Magie van Overpark Schellingwoude</h2>
+                <p>Overpark Schellingwoude is een verborgen juweel aan het IJ. Ontdek de geschiedenis, de natuur en de geheimen van deze unieke plek.</p>
+            </article>
+            <article class="route-card">
+                <h2>Route Tips voor Avonturiers</h2>
+                <p>Probeer de "Schatkaart Route" die je leidt langs verborgen schatten, historische locaties en adembenemende uitzichten.</p>
+            </article>
+        </section>
+        <footer>
+            <p>&copy; 2025 Smaragd aan het IJ Iz-Dine Amadou</p>
+        </footer>
+        <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img id="popup-image" src="" alt="Schattip Afbeelding">
+            <p id="popup-text"></p>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="nav-item">
+            <span class="nav-label">Home</span>
+            <a href="index.html" class="nav-button"><img src="foto/logo.svg" alt="Home"></a>
+        </div>
+        <div class="nav-item">
+            <span class="nav-label">Wandeltocht</span>
+            <a href="wandel.html" class="nav-button"><img src="foto/pont.png" alt="Wandeltocht"></a>
+        </div>
+        <div class="nav-item">
+            <span class="nav-label">Kaart</span>
+            <a href="kaart.html" class="nav-button"><img src="foto/pin.png" alt="Kaart"></a>
+        </div>
+    </nav>
+</main>
+</body>
+</html>
